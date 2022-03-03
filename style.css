@@ -1,0 +1,399 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  color: #666666;
+  font-size: 14px;
+  overflow-X: hidden;
+}
+*{
+	box-sizing: border-box;
+}
+header{
+	display: flex;
+	padding: 21px 15px;
+	border-top: 23px solid #282e40;
+}
+.logo{
+	width: 25%;
+}
+.navbar{
+	width: 75%;
+}
+.navbar ul{
+	list-style: none;
+}
+.navbar ul li{
+	display: inline-block;
+	margin: 0 15px;
+}
+.navbar ul li a{
+	text-decoration: none;
+	font-size: 20px;
+	color: #282e40;
+}
+.navbar ul li a:hover{
+	opacity: 0.8;
+	background-color: #282e40;
+	color: white;
+}
+/* mobilenav */
+.mobilenavbar{
+	display: none;
+}
+.mobilenav{
+	width: 75%;
+}
+.mobilenav ul{
+	list-style: none;
+	text-align: right;
+}
+.mobilenav ul li a{
+	text-decoration: none;
+	font-size: 20px;
+	color: #282e40;
+}
+.mobilenav ul li a:hover{
+	opacity: 0.8;
+	background-color: #282e40;
+	color: white;
+}
+/* slider */
+.slider{
+	min-height: 560px;
+	background-color: #282e40;
+	position: relative;
+	display: flex;
+}
+.slider::after{
+	content: "";
+	background: white;
+	width: 54%;
+	position: absolute;
+	top: 0;
+	right: -370px;	
+	height: 100%;
+	transform: skew(50deg);
+}
+.banner-title{
+	width: 50%;
+	padding: 70px;
+}
+.banner-title h2{
+	color: #5897ba;
+	font-size: 50px;
+}
+.banner-title h2 span{
+	color: white;
+	font-size: 50px;
+}
+.banner-title p{
+	color: #dfdbdb;
+	font-size: 20px;
+}
+.banner-title button{
+	background-color: white;
+	color: #282e40;
+	font-size: 17px;
+	padding: 15px;
+	border: none;
+	font-weight: bold;
+}
+.banner-title button:hover{
+	background-color: #282e40;
+	color: white
+}
+.banner-image{
+	z-index: 100;
+	width: 50%;
+}
+a i{
+	font-size: 50px;
+	margin-left: 10px;
+}
+/* about section */
+.about{
+    display: flex;
+}
+.aboutimage{
+    width: 50%;
+    height: 480px;
+    /* background-color: red; */
+    /* background-image: url(../images/about_img.png); */
+	background-image: url(images/about_img.png);
+    padding: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.abouttext{
+    width: 50%;
+    height: 480px;
+    /* background-color:black; */
+    padding: 2px 40px;
+}
+.abouttext h1{
+    color: #282e40;
+    font-size: 35px;
+}
+.abouttext p{
+    color: #dfdbdb;
+    font-size: 20px;
+}
+.abouttext button{
+    background-color: #282e40;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    font-weight:bold; 
+}
+.abouttext button:hover{
+    background-color:white;
+    color:#282e40; 
+}
+.ourfruit{
+	background-color:#282e40;
+}
+.ourfruit h1{
+	text-align: center;
+	color: white;
+	font-size: 50px;
+	font-weight: bolder;
+}
+#fruit-image{
+	display: flex;
+	justify-content: space-around;
+}
+.writeup{
+	display: flex;
+	justify-content: space-around;
+}
+.ourfruit h2{
+	color: white;
+	font-size: 30px;
+}
+.writeup span{
+	font-size:  20px;
+	color:#0641f0;
+	text-align: center;
+}
+.lemon{
+    display: flex;
+}
+.lemonimage{
+    width: 50%;
+    padding: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.lemonwrite{
+    width: 50%;
+    height: 480px;
+    /* background-color:black; */
+    padding: 60px 60px;
+}
+.lemonwrite h1{
+    color: #0641f0;
+    font-size: 70px;
+}
+.lemonwrite p{
+    color: #2c2a2a;
+    font-size: 20px;
+}
+.lemonwrite button{
+    background-color: #282e40;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    font-weight:bold; 
+}
+.lemonwrite button:hover{
+    background-color:white;
+    color:#282e40; 
+}
+.apple{
+	display: flex;
+}
+.appleimage{
+	width: 50%;
+	background-image: url(images/fruit_img.png);
+    padding: 40px;
+     background-repeat: round; 
+    
+}
+.applewrite{ 
+	width: 50%;
+	margin-left: 30px;
+	padding: 100px 130px;
+}
+.applewrite input{
+	border: 2px solid #282e40;
+	background-color: #282e40;
+	padding: 12px 0px;
+	padding-right: 150px;
+	padding-left: 10px;
+}
+.applewrite h1{
+	color: #282e40;
+	font-size: 30px;
+}
+.applewrite h1 span{
+	color: #0641f0;
+	font-weight: bolder;
+}
+.applewrite button{
+	background-color: #0641f0;
+	color: #282e40;
+	border: 3px solid #0641f0;
+	padding: 8px 35px;
+}
+.applewrite button:hover{
+	background-color: #282e40;
+	color: #0641f0;
+}
+
+/* our blog */
+section img{
+	margin-top: 50px;
+	padding-left: 30px;
+}
+.blog text{
+	text-align: center;
+	color: white;
+	padding: 8px;
+}
+.blog{
+	background-color: #21283d;
+	height: 100vh;
+}
+.ourblog{
+	text-align: center;
+	padding: 3px;
+	font-weight: bolder;
+	font-size: 20px;
+	
+}
+div .blogimage img{
+	height: 47vh;
+	width: 100%;
+	position: relative;
+
+}
+.blogimage{
+	background-color: #21283d; 
+}
+div .blogt{
+	padding: 12px;
+	text-align: center;
+	background-color: #139aacd3;
+	margin-left: 29px;
+	top: 545%;
+	/* transform: rotate(3deg); */
+}
+div .blogt span{
+	color: white;
+}
+.ourblog h1{
+	color: white;
+	font-size: 40px;
+}
+.blog1{
+	display: flex;
+	background-color: #21283d;
+	margin-left: 80px;
+}
+/* footer */
+footer{
+	display: flex;
+	background-color:  #282e40;
+	margin-top: 5px;
+}
+footer h2{
+	color: white;
+	font-size: 30px;
+	font-family: cursive;
+}
+footer h4{
+	color: white;
+	font-size: 15px;
+}
+footer a{
+	color: white;
+	text-decoration: none;
+	line-height: 25px;
+	font-size: 15px;
+}
+footer a:hover{
+	color: cyan;
+}
+.contact{
+	width: 25%;
+	padding: 30px;
+}
+center{
+	background-color: cyan;
+	border: 6px solid cyan;
+	color: white;
+	word-spacing: 3px;
+}
+#recent{
+	display: flex;
+}
+#recent img{
+	margin-top: 7px;
+}
+#recent h4{
+	padding-left: 8px;
+}
+.contact input{
+    border: 5px solid white;
+    padding: 10px;
+}
+.contact button{
+	border: 5px solid cyan;
+    background-color: cyan;
+    color: white;
+	line-height: 20px;
+	padding: 7px;
+}
+.contact button:hover{
+	border: 5px solid white;
+    background-color: white;
+	color: cyan;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
